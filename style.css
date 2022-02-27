@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins';
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 75%;
+    margin: 200px;
+    padding: 20px;
+    position: absolute;
+}
+
+
+/* -------------- glass effect section -------------- */
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: #222222;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text strong {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+.text P {
+    color: rgba(230, 230, 230, 0.92);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 2px;
+}
+
+.btn {
+    margin-top: 15px;
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    margin-top: 10px;
+    box-shadow: 2px 2px 39px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #d83737;
+    transition: all ease 0.6s;
+}
+
+.text strong span {
+    /* color: #00ffe7; */
+    color: #ff8100;
+    border: 1px #ff8100;
+}
+
+.text img {
+    margin: 18px;
+    margin-top: 6px;
+    padding: 3px;
+    height: 142px;
+    width: 140px;
+    position: relative;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* ----------------- Social media section --------------- */
+
+.social-media {
+    margin-top: 9px;
+    padding: 16px;
+}
+
+.social-media a {
+    margin: 9px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 2px 2px 39px rgba(0, 0, 0, 0.2);
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-github {
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.fa-facebook:hover {
+    background: #224796;
+    transition: all ease-out 0.3s;
+}
+
+.fa-twitter:hover {
+    background: #50abf0;
+    transition: all ease-out 0.3s;
+}
+
+.fa-instagram:hover {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    transition: all ease-out 0.3s;
+}
+
+.fa-github:hover {
+    background: #161415;
+    transition: all ease-out 0.3s;
+}
+
+
+/*--------------------- responsive web-section ----------------- */
+
+@media (max-width:780px) {
+    .container {
+        width: 90%;
+        height: 70%;
+    }
+    .text strong {
+        font-size: 2rem;
+        line-height: 40px;
+        padding: 0px 10px;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .btn {
+        width: 180px;
+        height: 44px;
+    }
+    .social-media {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        width: 90%;
+        height: 70%;
+    }
+    .text strong {
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+    .text p {
+        width: 90%;
+    }
+    .btn {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        width: 150px;
+        height: 45px;
+    }
+    .social-media {
+        margin-top: 10px;
+    }
+    .fa {
+        font-size: 18px;
+        width: 50px;
+    }
+}
+
+@media(max-width:400px) {
+    .container {
+        width: 90%;
+        height: 60%;
+    }
+    .text strong {
+        font-size: 1.4rem;
+        line-height: 33px;
+    }
+}
+
+@media(max-width:360px) {
+    .container {
+        width: 90%;
+        height: 60%;
+    }
+    .text strong {
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+    .text p {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+    }
+    .social-media a {
+        margin: 8px;
+    }
+}

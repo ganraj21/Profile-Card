@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./fav-icon.jfif">
+</head>
+
+<body>
+
+    <div class="container glass">
+        <!-- text------ -->
+        <div class="text">
+            <img src="./my-profile-img.jpg" alt="Profile-img">
+            <strong>I am <span class="type"></span></strong>
+            <p>Learn Responisve Website design using HTML, CSS, and JavaScript</p>
+            <a href="https://www.linkedin.com/in/ganesh-ghadge-a330a421a" class="btn" target="_blank">Contact Me</a>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100049551094517" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://www.instagram.com/ganraj_21/" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://twitter.com/ganraj_21?t=Y6mely4A2uDufOuMSC56fA&s=09" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://github.com/ganraj21" class="fa fa-github" target="_blank"></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- main-section --------------------->
+    <section id="main">
+        <!-- background-image ------------------>
+        <div class="bg">
+            <img src="./background-img.jpg">
+        </div>
+    </section>
+
+
+    <!-- javascript starts here ----------- -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: ['Ganesh Ghadge', 'Web-Developer', 'Competitive-Coder', 'Learner', 'YouTuber'],
+            typeSpeed: 100,
+            backSpeed: 70,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
